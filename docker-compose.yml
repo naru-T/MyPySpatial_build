@@ -1,0 +1,14 @@
+version: "2.1"
+services:
+  code-server:
+    build: .
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - PASSWORD=password #optional
+      - SUDO_PASSWORD=password #optional
+    volumes:
+      - /Users/nt/Dropbox/Workplace/202008LC_mapillary:/config
+    ports:
+      - 8443:8443
+    restart: unless-stopped
