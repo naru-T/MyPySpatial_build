@@ -17,7 +17,10 @@ RUN sudo apt-get -y install python3 \
             proj-data \
             proj-bin \
             libgeos-dev \
-            libgl1-mesa-dev
+            libgl1-mesa-dev \
+            gdal-bin \
+            python-gdal \
+            python3-gdal
 RUN pip3 install --upgrade pip
 RUN pip3 install numpy \
             piexif \
