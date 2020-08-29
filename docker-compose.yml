@@ -12,3 +12,5 @@ services:
     ports:
       - 8443:8443
     restart: unless-stopped
+    cpu_quota: 50000
+    mem_limit: 3g
